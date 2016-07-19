@@ -1,0 +1,19 @@
+<h2>Saved Businesses</h2>
+
+
+<table class='table'>
+
+  <thead>
+    <th>Business Name</th>
+    <th>Remove Business</th>
+    <td>How many times business has been saved</td>
+  </thead>
+
+  <tbody>
+    <tr ng-repeat='business in savedYelpBusiness track by $index'>
+      <td>{{business.id}}</td>
+      <td> <button class='btn btn-danger' ng-click='removeBusiness(business, $index)'><span class='glyphicon glyphicon-remove'></span></button></td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
